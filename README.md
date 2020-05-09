@@ -1,8 +1,7 @@
 # Coding-test
 Practice on coding test using programmers, Baekjoon, etc
 
-## Programmers
-[site](https://programmers.co.kr/learn/challenges)
+## [Programmers](https://programmers.co.kr/learn/challenges)
 
 ### Hash
 해시는 key-value 쌍으로 데이터를 저장하는 자료구조
