@@ -4,6 +4,6 @@ Practice on coding test using programmers, Baekjoon, etc
 ## Programmers
 [site](https://programmers.co.kr/learn/challenges)
 
-#### Hash
+### Hash
 해시는 key-value 쌍으로 데이터를 저장하는 자료구조
 - hash1: 완주하지 못한 선수 (2020.05.09)
