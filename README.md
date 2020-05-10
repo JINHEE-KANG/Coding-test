@@ -6,3 +6,4 @@ Practice on coding test using programmers, Baekjoon, etc
 #### Hash
 해시는 key-value 쌍으로 데이터를 저장하는 자료구조
 - [hash1](hash1.ipynb): 완주하지 못한 선수 (2020.05.09)
+- [hash2](hash2.ipynb): 위장 (2020.05.10)
