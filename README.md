@@ -13,3 +13,4 @@ Practice on coding test using programmers, Baekjoon, etc
 조건에 맞는 레코드 출력하기
 - [SELECT1](mysql/SELECT1.md): 모든 레코드 조회하기 (2020.05.13)
 - [SELECT2](mysql/SELECT2.md): 역순 정렬하기(2020.05.15)
+- [SELECT3](mysql/SELECT3.md): 아픈 동물 찾기(2020.05.16)
