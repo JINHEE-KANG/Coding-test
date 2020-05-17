@@ -1,4 +1,7 @@
 # 역순 정렬하기
+### 출처
+프로그래머스>코딩테스트 연습>SQL 고득점 KIT>SELECT>역순 정렬하기
+[문제 보러 가기](https://programmers.co.kr/learn/courses/30/lessons/59036)
 
 ### 문제 설명
 
