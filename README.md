@@ -15,3 +15,4 @@ Practice on coding test using programmers, Baekjoon, etc
 - [SELECT2](mysql/SELECT2.md): 역순 정렬하기(2020.05.15)
 - [SELECT3](mysql/SELECT3.md): 아픈 동물 찾기(2020.05.16)
 - [SELECT4](mysql/SELECT4.md): 어린 동물 찾기(2020.05.17)
+- [SELECT5](mysql/SELECT5.md): 동물의 아이디와 이름(2020.05.18)
