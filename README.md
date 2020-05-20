@@ -17,3 +17,4 @@ Practice on coding test using programmers, Baekjoon, etc
 - [SELECT4](mysql/SELECT4.md): 어린 동물 찾기(2020.05.17)
 - [SELECT5](mysql/SELECT5.md): 동물의 아이디와 이름(2020.05.18)
 - [SELECT6](mysql/SELECT6.md): 여러 기준으로 정렬하기(2020.05.19)
+- [SELECT7](mysql/SELECT7.md): 상위 N개 레코드(2020.05.20)
