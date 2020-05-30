@@ -4,7 +4,7 @@
 
 프로그래머스>코딩테스트 연습>SQL 고득점 KIT>SUM, MAX, MIN>최댓값 구하기
 
-[문제보러가기]()
+[문제보러가기](https://programmers.co.kr/learn/courses/30/lessons/59415)
 
 
 
