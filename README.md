@@ -19,4 +19,4 @@ Practice on coding test using programmers, Baekjoon, etc
 - [SELECT6](mysql/SELECT6.md): 여러 기준으로 정렬하기(2020.05.19)
 - [SELECT7](mysql/SELECT7.md): 상위 N개 레코드(2020.05.20)
 #### SUM, MAX, MIN
-- [MAX](mysql/MAX.md): 최댓값 구하기
+- [MAX](mysql/MAX.md): 최댓값 구하기(2020.05.30)
