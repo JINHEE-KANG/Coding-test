@@ -20,3 +20,4 @@ Practice on coding test using programmers, Baekjoon, etc
 - [SELECT7](mysql/SELECT7.md): 상위 N개 레코드(2020.05.20)
 #### SUM, MAX, MIN
 - [MAX](mysql/MAX.md): 최댓값 구하기(2020.05.30)
+- [MIN](mysql/MIN.md): 최솟값 구하기(2020.05.31)
