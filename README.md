@@ -21,3 +21,4 @@ Practice on coding test using programmers, Baekjoon, etc
 #### SUM, MAX, MIN
 - [MAX](mysql/MAX.md): 최댓값 구하기(2020.05.30)
 - [MIN](mysql/MIN.md): 최솟값 구하기(2020.05.31)
+- [SUM1](mysql/SUM1.md): 동물 수 구하기(2020.06.01)
