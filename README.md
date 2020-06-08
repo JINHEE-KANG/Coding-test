@@ -1,5 +1,5 @@
 # Coding-test
-Practice on coding test using *programmers, Baekjoon*, etc
+Practice on coding test using *programmers, Baekjoon, samsung*, etc
 
 ## [Programmers](https://programmers.co.kr/)
 ### [코딩테스트 고득점 KIT](https://programmers.co.kr/learn/challenges?tab=algorithm_practice_kit)
