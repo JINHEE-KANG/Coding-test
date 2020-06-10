@@ -25,4 +25,4 @@ Practice on coding test using *programmers, Baekjoon, samsung*, etc
 - [SUM1](mysql/SUM1.md): 동물 수 구하기(2020.06.01)
 
 ## [LeetCode](https://leetcode.com/)
-- [Contain Duplicate](Contains Duplicate.md)
+- [Contains Duplicate](Contains Duplicate.md): 같은 요소가 있는가?(2020.06.10)
