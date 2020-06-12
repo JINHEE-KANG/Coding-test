@@ -27,3 +27,4 @@ Practice on coding test using *programmers, Baekjoon, samsung*, etc
 ## [LeetCode](https://leetcode.com/)
 - [Contains Duplicate](Contains Duplicate.ipynb): 같은 요소가 있는가?(2020.06.10)
 - [Defanging an IP Address](Defanging an IP Address.ipynb): 점을 괄호로 묶기(2020.06.11)
+- [제곱수](제곱수.ipynb): 1부터 n까지 사이의 제곱수(2020.06.12)
