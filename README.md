@@ -28,3 +28,4 @@ Practice on coding test using *programmers, Baekjoon, samsung*, etc
 - [Contains Duplicate](Contains_Duplicate.ipynb): 같은 요소가 있는가?(2020.06.10)
 - [Defanging an IP Address](Defanging_IP_Address.ipynb): 점을 괄호로 묶기(2020.06.11)
 - [제곱수](제곱수.ipynb): 1부터 n까지 사이의 제곱수(2020.06.12)
+- [3의배수5의배수](3의배수5의배수.ipynb): 3의 배수와 5의 배수 찾기(2020.06.13)
