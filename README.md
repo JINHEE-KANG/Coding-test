@@ -2,6 +2,9 @@
 Practice on coding test using *programmers, Baekjoon, samsung*, etc
 
 ## [Programmers](https://programmers.co.kr/)
+### [레벨체크]
+- [최대최소](최대최소.ipynb): (2020.06.20)
+
 ### [코딩테스트 고득점 KIT](https://programmers.co.kr/learn/challenges?tab=algorithm_practice_kit)
 #### Hash
 해시는 key-value 쌍으로 데이터를 저장하는 자료구조
