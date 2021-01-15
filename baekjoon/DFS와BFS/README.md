@@ -17,6 +17,7 @@ def dfs(start, answer):
 
 #### 문제
 - [DFS와 BFS](baekjoon/DFS와BFS/DFS와BFS.md)
+- [연결요소개수](baekjoon/DFS와BFS/연결요소개수.md)
 
 
 # BFS 너비 우선 탐색
