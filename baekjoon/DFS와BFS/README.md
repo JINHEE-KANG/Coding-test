@@ -15,6 +15,8 @@ def dfs(start, answer):
     return answer # dfs 탐색 순서 반환
 ```
 
+#### 문제
+- [DFS와 BFS](baekjoon/DFS와BFS/DFS와BFS.md)
 
 
 # BFS 너비 우선 탐색
@@ -39,3 +41,6 @@ def bfs(start):
                 queue.append(c+1)					
     return visited # bfs 탐색 순서 반환
 ```
+
+#### 문제
+- [DFS와 BFS](baekjoon/DFS와BFS/DFS와BFS.md)
