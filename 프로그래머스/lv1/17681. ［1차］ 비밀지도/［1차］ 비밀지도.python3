@@ -1,0 +1,19 @@
+def bin2map(n,str):
+    ans = ''
+    for k in range(n):
+        if str[k]=='0': ans +=' '
+        else: ans += '#'
+    return ans
+
+def solution(n, arr1, arr2):
+    answer = []
+    
+    for i in range(n):
+        ith_arr1 = bin(arr1[i])[2:]
+        ith_arr2 = bin(arr2[i])[2:]
+        ith_ans = str(int(ith_arr1)+int(ith_arr2))
+        if len(ith_ans)!=n:
+            ith_ans = '0'*(n-len(ith_ans))+ith_ans
+        answer.append(bin2map(n,ith_ans))
+            
+    return answer
