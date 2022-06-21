@@ -1,3 +1,15 @@
+# ver 1. 시간초과
+''' 
+def solution(n, left, right):
+    answer = []
+    for i in range(n):
+        k = i+1
+        answer.extend([k]*k)
+        answer.extend(range(k+1,n+1))
+    
+    return answer[left:right+1]
+'''
+
 def solution(n, left, right):
     '''
     for k in range(n): [k]*k + [k+1:n+1]
