@@ -1,16 +1,52 @@
+'''
+list 사용보다 deque가 유리하다
+* 경태님 코드 상으로는 크게 차이 없으나, indexing으로 city찾고 pop하는 구조라면 list보다 deque가 유리함
+** 지우는 방식은 pop, del, remove가 있다. 
+일반적으로 del이 빠르다고 하지만, index를 찾고 할당해야한다는 점에서 코드 2줄 쓰기 때문에 이 문제에서는 크게 차이 없을 듯
+pop은 가장 뒤에 있는 요소를 제거한다는 관점-->인덱스 찾아서 특정 인자를 빼는 거라면 굳이 pop을 써야 할까?
+대부분 remove 사용-->다른 코드는 어떤 식으로 사용했는지 살펴보기
+
+(1) list vs deque
+https://wellsw.tistory.com/122
+- list는 특정 인덱스 값을 삭제하면, 나머지 ele.의 인덱스를 정렬하는 시간이 소요된다
+(ex. [0,1,2,3] --> [0, ,2,3] --> [0,2,3])
+- deque는 양쪽에서 추가/제거가 가능한 double-ended 구조
+- appendleft와 popleft가 별도로 존재한다(append는 뒤에 추가, pop은 뒤에 삭제)
+
+(2) pop vs del vs remove
+https://blog.naver.com/PostView.nhn?blogId=youndok&logNo=222078430066
+- deque(maxlen=cacheSize) 사용하면 cacheSize에 따른 remove는 따로 처리할 필요 없음
+- pop은 맨 뒤의 인자를 뺄 때 주로 사용 --> pop() --> 앞에서부터 제거한다면 pop(0)보다는 popleft()가 낫다
+조건에 맞는 특정 index를 찾을 때는 pop보다는 remove가 나을 듯(del처럼 index 찾아야 하는 문제-->remove는 index 따로 찾지 않고 바로 인자로 제거하면 됨)
+- del이 제일 빠르지만, index 사용할 때는 index 특정하는 코드가 필요 --> 이번 문제에서는 그다지 유리하지 않다
+- remove는 index 사용할 필요 없음 --> 이번 문제는 캐시에 중복값이 없기 때문에, index없이 remove만 사용하는 것이 더 나을 듯
+- 보통 remove는 값을 찾아야 해서 느린 편이다. 하지만 이 문제에서 index를 찾는 과정이 있으므로 remove가 더 빨라보임
+- del은 슬라이싱으로 여러개 값을 한번에 제거할 수 있다. & 존재하지 않는 index를 입력해도 IndexError를 피할 수 있음
+remove(): 첫번째 일치하는 값을 제거 ex) [0,2,3,2] -> a.remove(2) -> [0,3,2]
+del :특정 값을 제거 ex) [0,2,3,2] -> del a[1] -> [0,3,2]
+pop(): 특정 index의 값을 추출(제거+반환) ex) [0,2,3,2] -> a.pop(1) -> [0,3,2]
+
+(3) LRU 알고리즘
+https://hwiyong.tistory.com/398
+https://j2wooooo.tistory.com/121
+'''
+
+
 def solution(cacheSize, cities):
     answer = 0
-    cache = []
+    cache = [] #### indexing+pop은 list보다 deque가 유리
     
     for city in cities:
         city = city.lower() #소문자 일괄 처리
+
         # cache hit == 1
         if city in cache:
             # i = cache.index(city) # i 따로 할당할지 vs 안하고 바로 넣을지
             # cache.pop(i)
-            cache.pop(cache.index(city))
+            cache.pop(cache.index(city)) ##### del-->index 찾아야함 remove-->찾을 필요 없이 pop-->인덱스 쓰려면 굳이?
             cache.append(city)
             answer += 1
+
         # cache miss == 5
         elif cacheSize==0: # 예외) cachesize == 0 일 때
             answer += 5
