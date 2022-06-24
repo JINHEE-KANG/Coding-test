@@ -3,7 +3,7 @@ def solution(n, t, m, p):
     result = '0'
     k = 0
     i = p - 1
-    over10 = {10:'A',11:'B',12:'C',13:'D',14:'E',15:'F'}
+    over10 = 'ABCDEF'
     while len(answer) < t:
         if len(result) <= i+1:
             k += 1
@@ -13,7 +13,7 @@ def solution(n, t, m, p):
             while k2 > 0:
                 k2, mod = divmod(k2, n)
                 if n>=10 and mod>=10:
-                    base += over10[mod]
+                    base += over10[mod%10]
                 else:
                     base += str(mod)
             result += base[::-1]
