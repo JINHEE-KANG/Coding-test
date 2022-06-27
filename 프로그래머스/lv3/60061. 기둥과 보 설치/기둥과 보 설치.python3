@@ -1,0 +1,43 @@
+def check(result): #[x,y,a]의 리스트
+    for x,y,kind in result:
+        # 기둥인 경우
+        if kind==0:
+            # (1)바닥이거나 (2)옆에 보가 있거나 (3)같은 위치에 보가 있거나 (4)아래에 기둥이 있거나
+            if y==0 or (x-1,y,1) in result or (x,y,1) in result or (x,y-1,0) in result:
+                continue
+            else:
+                return False
+        # 보인 경우
+        elif kind==1:
+            # (1)아래에 기둥이 있거나 (2)옆+아래에 기둥이 있거나 (3)양 옆에 보가 있을 때
+            if (x,y-1,0) in result or (x+1,y-1,0) in result or ((x-1,y,1) in result and (x+1,y,1) in result):
+                continue
+            else:
+                return False
+    return True
+
+
+def solution(n, build_frame):
+    result = set()
+    
+    for a in build_frame:
+        x,y,what,how = a
+        # 설치인 경우
+        if how==1:
+            result.add((x,y,what)) #일단 설치하기
+            is_true=check(result) #조건 확인
+            if is_true: # True면 설치 완료
+                continue
+            else: #False면 다시 제거(설치하지 않음)
+                result.remove((x,y,what))
+        # 제거인 경우
+        elif how==0:
+            if (x,y,what) in result: # 제거 대상이 설치됐는지 확인
+                result.remove((x,y,what)) # 일단 지우기
+                is_true=check(result) # 조건 확인
+                if is_true: # True면 제거 완료
+                    continue
+                else: # False면 다시 설치(제거하지 않음)
+                    result.add((x,y,what))
+    result = [list(i) for i in result]
+    return sorted(result,key = lambda x: (x[0],x[1],x[2]))
