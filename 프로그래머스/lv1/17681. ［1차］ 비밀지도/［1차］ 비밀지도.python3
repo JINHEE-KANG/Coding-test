@@ -1,7 +1,7 @@
-def bin2map(n,str):
+def bin2map(n,s):
     ans = ''
     for k in range(n):
-        if str[k]=='0': ans +=' '
+        if s[k]=='0': ans +=' '
         else: ans += '#'
     return ans
 
